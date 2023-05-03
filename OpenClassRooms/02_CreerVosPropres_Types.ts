@@ -64,4 +64,15 @@ type WithMagic = {
     magic: 10,
  };
 
- 
+ const myWarriorHero: Hero = {
+    name: 'TSolomon',
+    life: 200,
+    attack: 30,
+    defense: 50,
+    pets: [babyDragon, babyLicorn],
+    equipments: [
+       smallArmor,
+       smallSword,
+       smallShield,   
+    ],
+ };

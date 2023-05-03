@@ -31,3 +31,15 @@ var smallMagicalWand = {
     attack: 4,
     magic: 10,
 };
+var myWarriorHero = {
+    name: 'TSolomon',
+    life: 200,
+    attack: 30,
+    defense: 50,
+    pets: [babyDragon, babyLicorn],
+    equipments: [
+        smallArmor,
+        smallSword,
+        smallShield,
+    ],
+};
