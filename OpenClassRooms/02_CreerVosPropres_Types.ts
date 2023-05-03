@@ -33,3 +33,10 @@ type WithMagic = {
     attack: 10,
     defense: 20,
  };
+ const babyLicorn: MagicalPet = {
+    name: 'Typemoor',
+    life: 80,
+    attack: 5,
+    defense: 30,
+    magic: 50,
+ };
