@@ -25,3 +25,9 @@ var smallShield = {
     price: 15,
     defense: 10,
 };
+//utilisation de deux types sur une même variable
+var smallMagicalWand = {
+    price: 50,
+    attack: 4,
+    magic: 10,
+};
