@@ -12,3 +12,16 @@ var babyLicorn = {
     defense: 30,
     magic: 50,
 };
+var smallArmor = {
+    price: 30,
+    attack: 2,
+    defense: 5,
+};
+var smallSword = {
+    price: 20,
+    attack: 5,
+};
+var smallShield = {
+    price: 15,
+    defense: 10,
+};

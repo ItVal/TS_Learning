@@ -40,3 +40,19 @@ type WithMagic = {
     defense: 30,
     magic: 50,
  };
+
+ const smallArmor: Equipment = {
+    price: 30,
+    attack: 2,
+    defense: 5,
+ };
+ 
+ const smallSword: Equipment = {
+    price: 20,
+    attack: 5,
+ };
+ 
+ const smallShield: Equipment = {
+    price: 15,
+    defense: 10,
+ };
