@@ -11,8 +11,10 @@ type WithMagic = {
  };
  
  type Pet = Character;
- type MagicalPet = Pet & WithMagic;
- 
+
+ interface MagicalPet extends Pet, WithMagic{};
+
+
  type Equipment = {
     price: number;
     attack?: number;
@@ -75,4 +77,13 @@ type WithMagic = {
        smallSword,
        smallShield,   
     ],
+ };
+
+ const myMagicienHero: Magician = {
+    name: 'TSoren',
+    life: 150,
+    attack: 20,
+    defense: 40,
+    equipments: [smallMagicalWand],
+    magic: 200,
  };
