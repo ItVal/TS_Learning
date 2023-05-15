@@ -41,3 +41,7 @@ type Shop<ItemType> = {
     items: Array<ItemType>;
 };
 
+//utilisons maintenant notre type générique
+type Armory = Shop<Equipment>;
+type PetShop = Shop<Pet>;
+type Apothecary = Shop<Potion>;
