@@ -76,3 +76,23 @@ const myCharacter: Partial<Character> = {
     // toutes les propriétés optionnelles.
     name: 'Mario',
 };
+
+//02. Record<KeyType, ValueType> : Cet utilitaire permet de définir des types d’objets
+// On définit un type représentant un objet dont les clés
+// sont des chaînes de caractères (n'importe lesquelles)
+// et les valeurs sont des nombres
+type CollectionOfNumbers = Record<string, number>;
+const stats: CollectionOfNumbers = {
+    age: 45,
+    life: 100,
+    magic: 10,
+    whateverTheNameItMustContainANumber: 20,
+};
+
+// On peut utiliser une union pour n'autoriser que des clés spécifiques
+type StatisticNames = 'life' | 'attack' | 'defense';
+const stats: Record<StatisticNames, number> = {
+    life: 100,
+    attack: 10,
+    defense: 20,
+};
