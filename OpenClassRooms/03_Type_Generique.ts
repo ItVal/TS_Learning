@@ -59,3 +59,20 @@ function createShop<ItemType>(name: string, owner: Character, items: Array<ItemT
 }
 // Appel de la fonction générique
 const armory = createShop<Equipment>('My armory', { name: 'Bob', life: 100, attack: 1, defense: 2 }, []);
+
+//Utilisation de types génériques proposés par TypeScript, appelé types utilitaires
+//01 Partial<> : Ce type utilitaire prend en paramètre un type représentant un objet, et il retourne un type représentant ce même objet, mais avec toutes ces propriétés marquées comme étant optionnelles.
+
+type Character = {
+    // Toutes les propriétés sont requises (elles n'ont pas le signe "?")
+    name: string;
+    life: number;
+    attack: number;
+    defense: number;
+};
+const myCharacter: Partial<Character> = {
+    // On ne fournit que le nom, pas le reste des propriétés.
+    // On n'a pas d'erreur car "Partial" rend
+    // toutes les propriétés optionnelles.
+    name: 'Mario',
+};
